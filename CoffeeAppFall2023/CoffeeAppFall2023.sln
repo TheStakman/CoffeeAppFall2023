@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeAppFall2023", "CoffeeAppFall2023\CoffeeAppFall2023.csproj", "{DA380046-E57E-4048-9F7E-8086242E414E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA380046-E57E-4048-9F7E-8086242E414E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA380046-E57E-4048-9F7E-8086242E414E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA380046-E57E-4048-9F7E-8086242E414E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DA380046-E57E-4048-9F7E-8086242E414E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA380046-E57E-4048-9F7E-8086242E414E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA380046-E57E-4048-9F7E-8086242E414E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {066F9436-463D-4F52-82D5-6F48823197AA}
+	EndGlobalSection
+EndGlobal
