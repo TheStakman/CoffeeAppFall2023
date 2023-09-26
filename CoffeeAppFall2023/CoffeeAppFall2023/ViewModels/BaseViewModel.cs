@@ -5,14 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
+using CoffeeAppFall2023.Services;
+using CoffeeAppFall2023.Models;
 
 namespace CoffeeAppFall2023.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public BaseViewModel()
-        {
 
+        private readonly IDataStore<Item> _dataStore;
+
+        //todo add dependency injection in mauiprogram.cs for IDataStore<Item>
+        public BaseViewModel(IDataStore<Item> dataStore)
+        {
+            _dataStore = dataStore;
         }
 
         bool isBusy = false;
@@ -55,6 +61,6 @@ namespace CoffeeAppFall2023.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        #endregion
+        #endregion      
     }
 }
