@@ -21,6 +21,11 @@ namespace CoffeeAppFall2023.ViewModels
             _dataStore = dataStore;
         }
 
+        public BaseViewModel()
+        {
+            
+        }
+
         bool isBusy = false;
 
         public bool IsBusy
