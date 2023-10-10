@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeAppFall2023.Views.NewItemPage"
+             Title="NewItemPage"
+             BindingContext="{Binding AddCoffeeVM, Source={StaticResource Locator}}">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="6" Padding="15" Margin="0,20">
+            <Label Text="{Binding AddAction}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Name" VerticalOptions="Center"></Label>
+                <Label Grid.Row="1" Grid.Column="0" Text="Characteristic" VerticalOptions="Center"></Label>
+                <Label Grid.Row="2" Grid.Column="0" Text="Strength" VerticalOptions="Center"></Label>
+                <Label Grid.Row="3" Grid.Column="0" Text="Cost" VerticalOptions="Center"></Label>
+                <Label Grid.Row="4" Grid.Column="0" Text="ImageURL" VerticalOptions="Center"></Label>
+
+                <Entry Grid.Row="0" Grid.Column="1" Text="{Binding Name}" Placeholder="Coffee Name"></Entry>
+                <Entry Grid.Row="1" Grid.Column="1" Text="{Binding Characteristic}" Placeholder="Characteristic"></Entry>
+                <Entry Grid.Row="2" Grid.Column="1" Text="{Binding Strength}" Placeholder="Strength"></Entry>
+                <Entry Grid.Row="3" Grid.Column="1" Text="{Binding Cost}" Placeholder="Cost"></Entry>
+                <Entry Grid.Row="4" Grid.Column="1" Text="{Binding ImageURL}" Placeholder="ImageURL"></Entry>
+            </Grid>
+            <StackLayout>
+                <Button Text="Cancel" HorizontalOptions="FillAndExpand" Command="{Binding CancelCommand}"></Button>
+                <Button Text="Save" HorizontalOptions="FillAndExpand" Command="{Binding SaveCommand}"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

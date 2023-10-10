@@ -32,5 +32,13 @@ namespace CoffeeAppFall2023.ViewModels
 		}
 
 		//add coffee view model
+
+		public AddCoffeeViewModel AddCoffeeVM
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<AddCoffeeViewModel>();
+			}
+		}
 	}
 }

@@ -18,7 +18,7 @@ namespace CoffeeAppFall2023.Models
 
         public string Strength { get; set; }
 
-        public double Cost { get; set; }
+        public decimal Cost { get; set; }
 
         public string ImageURL { get; set; }
 
